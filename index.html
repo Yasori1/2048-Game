@@ -39,11 +39,43 @@
       </div>
       <!--/end gameboard-->
       <!--guide-->
-      <section class ="guide clearfix">
+      <section class="guide clearfix">
         <h2>What is this?</h2>
         <p>
           2048 is a game where you combine adjacent tiles to reach 2048.
         </p>
+      </section>
+      <section class="guide clearfix">
+        <p>
+            Tiles with matching number values can be merged into a single tile,
+            which recevies the values' sum. 
+        </p>
+        <p>
+            To move the board, use the directional arrows- or wipe.
+        </p>
+        <div class ="guide_arrow-wrap">
+            <span class="guide_arrow">&uHar;</span>
+            <span class="guide_arrow">&lHar;</span>
+            <spna class="guide_arrow">&rHar;</spna>
+            <span class ="guide_arrow">&dHar;</span> 
+        </div>
+        <p>To win, get a 2048 tile.</p>
+      </section>
+      <!--/end guide-->
     </main>
+    <!--/end main-->
+
+    <!--templates-->
+    <script type="text/html" id="template_grid_cell">
+        <div class="grid_cell">
+            <span class="tile_number"> </span>
+        </div>
+    </script>
+
+    <script type="text/html" id="template_tile">
+        <div class="tile">
+            <span class = "tile_number"> </span>
+        </div>
+    <!--/end templates-->
   </body>
 </html>
