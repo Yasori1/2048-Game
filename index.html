@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scable=no,initial-scale=1,maximum-scale=1,width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Main-->
+    <main class="wrapper">
+      <!--İntro-->
+      <div class="intro clearfix">
+        <h1 class="intro_title">2048</h1>
+      </div>
+      <!--/end intro-->
+      <!--controls-->
+      <div class="controls clearfix">
+        <div class="controls_game">
+          <button data-js="newgame" class="controls_game-btn">New Game</button>
+        </div>
+        <div class="controls_score">
+          <span class="controls_score-label">Score:</span>
+          <br />
+          <span class="controls_score-text" data-js="Score"></span>
+        </div>
+      </div>
+      <!--gameboard-->
+      <div id="touchGameboard" class="gameboard">
+        <div class="grid"></div>
+        <div class="tile-container"></div>
+      </div>
+      <!--/end gameboard-->
+      <!--guide-->
+      <section class ="guide clearfix">
+        <h2>What is this?</h2>
+        <p>
+          2048 is a game where you combine adjacent tiles to reach 2048.
+        </p>
+    </main>
+  </body>
+</html>
