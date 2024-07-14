@@ -1,0 +1,41 @@
+/* author: https://codepen.io/jessezisme/pen/yKoRWq
+Jesse Z */
+
+/*
+  Variables:
+*/
+/**/
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+button:hover,
+a:hover{
+    cursor:pointer;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html{
+    min-height: 100%;
+    width: 100%;
+    font-size:15px;
+    font-family:"Rubik",sans-serif;
+    line-height: 1.5em;
+    color:#fff;
+    background: #160140;
+    background: linear-gradient(to top,#160140,#261535);
+}
+
+.wrapper{
+    max-width: 700px;
+    margin:0 auto;
+    padding:15px;
+}
